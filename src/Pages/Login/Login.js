@@ -15,6 +15,8 @@ export const Login = () => {
         console.log (error)
         
       }
+      setEmail('')
+      setPassword('')
     }
 
   return (

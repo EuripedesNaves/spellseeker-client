@@ -26,6 +26,8 @@ class Api{
             } 
         )
     }
+    
+    //login
     login = async (user) => {
         try {
             const { data } = await this.api.post('/login', user)
@@ -33,6 +35,16 @@ class Api{
             return data
         } catch (error) {
             console.log(error, `Could not login`)
+        }
+    }
+
+    //signup
+    signup = async () => {
+        try {
+            const { data } = await this.api.post('/register', )
+            return data
+        } catch (error) {
+            throw error.responde;
         }
     }
 
