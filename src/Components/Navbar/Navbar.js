@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { NavItem, Nav } from 'reactstrap'
 import Spellseeker from '../../images/Spellseeker.png'
+import './Navbar.css'
 
 export const Navbar = () => {
     return (
@@ -11,7 +12,6 @@ export const Navbar = () => {
                     <NavItem>
                         <Link>
                             <img
-                                style={{ width: 120, height: 120, marginTop: -20 }}
                                 src={Spellseeker}
                                 alt={Spellseeker}
                             />

@@ -5,20 +5,23 @@ import { useNavigate } from 'react-router-dom';
 import '../Home/Home.css';
 
 export const Home = () => {
-    const useNavigate = useNavigate();
+  const navigate = useNavigate();
 
-    const handleLogin = () => {
-        navigate ('/login')
-    }
+  const handleLogin = () => {
+    navigate('/login')
+  }
 
-    const handleSignup = () => {
-        navigate ('/signup')
-    }
+  const handleSignup = () => {
+    navigate('/register')
+  }
 
   return (
     <div className='home'>
-        <button className='btn-home' onClick={handleLogin}>Login</button>
-        <button className='btn-home'onClick={handleSignup}>Signup</button>
+      <p>olá</p>
+      <button className='btn-home' onClick={handleLogin}>Login</button>
+      <button className='btn-home' onClick={handleSignup}>Signup</button>
     </div>
   )
 }
+
+export default Home;
